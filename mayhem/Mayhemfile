@@ -1,0 +1,10 @@
+version: '1.17'
+project: MYPROJECT
+target: libbw64-exercise 
+baseimage: $MAYHEM_DOCKER_REGISTRY/abrewer/libbw64-exercise:latest 
+
+cmds:
+
+  - cmd: /usr/local/bin/bw64_read_write @@ /dev/null 
+    env: {}
+
